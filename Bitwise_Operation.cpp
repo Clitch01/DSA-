@@ -3,15 +3,18 @@ using namespace std;
 typedef long long ll;
 
 class BitOperation {
-public:
+   public:
     int FlipToZero(int n, int k) {
         return n & ~(1 << (k - 1));  // Flip the k-th bit of n to 0
     }
     int FlipToOne(int n, int k) {
         return n | (1 << (k - 1));  // Flip the k-th bit of n to 1
     }
-    int FlipBit (int n, int k) {
+    int FlipBit(int n, int k) {
         return n ^ (1 << (k - 1));  // Flip the k-th bit of n
+    }
+    bool CheckBit(int n, int k) {
+        return n & (1 << (k - 1));
     }
 };
 
@@ -30,6 +33,8 @@ int main() {
     cout << bitwise.FlipToOne(n, k);
     cout << "\n";
     cout << bitwise.FlipBit(n, k);
+    cout << "\n";
+    cout << bitwise.CheckBit(n, k);
 
     return 0;
 }
