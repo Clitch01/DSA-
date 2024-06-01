@@ -14,7 +14,7 @@ class BitOperation {
         return n ^ (1 << (k - 1));  // Flip the k-th bit of n
     }
     bool CheckBit(int n, int k) {
-        return n & (1 << (k - 1));
+        return n & (1 << (k - 1));  // Check the k-th bit of n
     }
 };
 
