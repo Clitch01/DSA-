@@ -1,8 +1,10 @@
+/* https://atcoder.jp/contests/dp/tasks/dp_b */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-const int MAXN = 1e5 + 1;
 
+const int MAXN = 1e5 + 1;
 int n, k;
 int cache[MAXN];
 
